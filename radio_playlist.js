@@ -19,7 +19,12 @@ async function getPlaylist() {
 	for (const dal of playlist) {
 		artist = dal.artist["#text"];
 		songName = dal.name;
-		songDate = dal.date["#text"];
+		if (!dal.date) {
+			songDate = "MOST SZÓL";
+		}
+		else {
+			songDate = dal.date["#text"];
+		}
 		const tablazatSor = document.createElement("tr");
 		playlistTable.appendChild(tablazatSor);
 		const tablazatCellaDatum = document.createElement("td");

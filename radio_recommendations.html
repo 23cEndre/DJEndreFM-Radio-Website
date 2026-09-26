@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="style/style.css" rel="stylesheet">
+    <script src="./radio_recommendations.js" defer></script>
     <title>DJ ENDRE SZABADIDŐKÖZPONT</title>
 </head>
 <body>
@@ -80,69 +81,14 @@
 	  </div>
 	</nav>
 	<h1>
-	Üdvözöljük a DJ Endre Szabadidőközpont weboldalán!
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	A DJ Endre Szabadidőközpontban garantáltan jól fogja érezni magát! Az intézmény számos érdekes előadást, és élményt kínál, kicsiknek és nagyoknak egyaránt. Kínálatunk közé tartoznak a csillagászati előadások, vízi csúszdák, jégpálya, egy saját rádióállomás, és még sok más! Belépődíjak csak a látogatók által igénybe venni kívánt szolgáltatásokra fizetendők, kedvező áron.
-	</p>
-	<h1>
-	Előadások
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	Intézményünkben számos olyan előadás kerül megrendezésre, különféle témákban, amik népszerűek, illetve érdekfeszítőek a fiatal és idős generációknak. A témák közé tartozik a csillagászat, az informatika, és a modern biztonság. <a href="lessons.html">Bővebben -></a>
-	</p>
-	<h1>
-	Vízi csúszdák és medencék
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	Látogatóink körében népszerűek a vízi csúszdáink és a medencéink, amelyek egész évben várják a strandolni vágyókat. Szoros összeköttetésben van a Felsőörsi Fürdővel is, ahova mindössze egyetlen folyosón keresztül át lehet jutni innen. <a href="waterpark.html">Bővebben -></a>
-	</p>
-	<h1>
-	Rádió
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	Intézményünknek van egy teljesen nyilvános rádióállomása is. Hallható az intézmény teljes területén 100V-os PA rendszeren keresztül, vagy online bárhol a világban. <a href="radio-main.html">Bővebben -></a>
-	</p>
-	<h1>
-	Koncertek és bulik
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	Intézményünkben megrendezésre kerülnek időnként különböző zenei események. Az ezeken való részvétel ingyenes. <a href="parties.html">Bővebben -></a>
-	</p>
-	<h1>
-	Jégpálya
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	A téli sportolók körében a jégpálya is nagyon népszerű, az őszi szünettől egészen a tavaszi szünetig várja a vendégeket. <a href="ice_rink.html">Bővebben -></a>
-	</p>
-	<h1>
-	Csillagda
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	A csillagászat iránt érdeklődőknek nagy attrakció a csillagda, ahol speciális távcsövekkel tekinthetik meg a különböző égitesteket, és tájékozódhatnak velük kapcsolatos információkról. <a href="astronomy.html">Bővebben -></a>
-	</p>
-	</p>
-	<h1>
-	Szabadulószoba
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	A szabadulószoba megtornáztatja az agyat különféle logikai feladatokkal és kihívásokkal. <a href="escaperoom.html">Bővebben -></a>
-	</p>
-	<h1>
-	Számítógép-labor
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	Interaktív programozás, szoftverfejlesztés és tesztelés, népszerű a kódolás iránt érdeklődők körében. <a href="computerlab.html">Bővebben -></a>
-	</p>
-	<h1>
-	Sportpálya
-	</h1>
-	<p style="text-align: justify; padding: 10px; font-size: 20px;">
-	Kültéri placc, ahol bármilyen sportot lehet űzni, például focizni, kosárlabdázni és futni. <a href="sportfield.html">Bővebben -></a>
-	</p>
-	<h1>
-	A DJ Endre Szabadidőközpont emellett még sok más szolgaltatást és tevékenységet kínál!
-	</h1>
+	Zene ajánló - Írjon be egy előadót vagy dalt, és kapjon személyre szabott ajánlásokat!</br>A beviteli mezőbe való beírás után gombnyomás nélkül megjelenik fél percen belül a playlist.
+    </h1>
+	<form style="text-align: center">
+		<label for="songEntry" style="font-size: 25px">"Előadó" vagy "Előadó - Dal": </label>
+		<input type="text" id="songEntry" style="background-color: black; color: #FF8800"></input>
+	</form>
+    <table id="playlist_table">
+    </table>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
